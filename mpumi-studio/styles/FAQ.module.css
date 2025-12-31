@@ -1,0 +1,127 @@
+.faq {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--pink-primary);
+  border-radius: 50px;
+  color: var(--pink-primary);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--charcoal);
+  margin: 0 0 4rem 0;
+}
+
+.emphasis {
+  font-style: italic;
+  color: var(--pink-primary);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 1rem;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  transition: color 0.3s ease;
+}
+
+.question:hover {
+  color: var(--pink-primary);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--charcoal);
+  transition: transform 0.8s ease, color 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.iconOpen {
+  transform: rotate(180deg);
+}
+
+.answerWrapper {
+  overflow: hidden;
+}
+
+.answer {
+  padding: 0 0 1.5rem 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  opacity: 0.8;
+}
+
+.whatsappLink {
+  color: var(--green-whatsapp);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.whatsappLink:hover {
+  color: var(--pink-primary);
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 4rem 1.5rem;
+  }
+  
+  .question {
+    font-size: 1.125rem;
+    padding: 1rem 0;
+  }
+  
+  .answer {
+    font-size: 0.9375rem;
+  }
+}
