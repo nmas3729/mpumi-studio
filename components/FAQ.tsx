@@ -88,10 +88,10 @@ export default function FAQ() {
                   </svg>
                 </span>
               </button>
+
+              {/* ✅ Fixed ref callback for production */}
               <div
-                ref={(el) => {
-                  contentRefs.current[index] = el;
-                }}
+                ref={(el) => { contentRefs.current[index] = el; }}
                 className={styles.answerWrapper}
                 style={{ overflow: 'hidden', height: 0 }}
               >
