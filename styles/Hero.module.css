@@ -4,6 +4,22 @@
   align-items: center;
   padding: 8rem 2rem 4rem;
   background: var(--gradient-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(255, 60, 119, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(255, 182, 214, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 40% 20%, rgba(230, 242, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  opacity: 0.2;
+  z-index: 0;
 }
 
 .container {
@@ -13,6 +29,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .content {
@@ -63,6 +81,29 @@
   padding: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: transform 0.8s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.imageGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 60, 119, 0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.imageWrapper:hover .imageGlow {
+  opacity: 1;
 }
 
 .image {
@@ -70,6 +111,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 40% 60% 30% 70% / 60% 30% 70% 40%;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 968px) {
@@ -90,6 +133,8 @@
 @media (max-width: 768px) {
   .hero {
     padding: 6rem 1.5rem 3rem;
+    padding-bottom: 6rem;
+    min-height: auto;
   }
   
   .headline {
@@ -98,5 +143,29 @@
   
   .description {
     font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .imageWrapper {
+    max-width: 100%;
+  }
+  
+  .imageWrapper:hover {
+    transform: translateY(-3px) scale(1.01);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5rem 1rem 2rem;
+    padding-bottom: 5rem;
+  }
+  
+  .headline {
+    font-size: clamp(1.75rem, 10vw, 2.5rem);
+  }
+  
+  .description {
+    font-size: 0.9375rem;
   }
 }
