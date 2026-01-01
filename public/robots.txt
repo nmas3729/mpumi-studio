@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpumi.nmas.co.za/sitemap.xml
