@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-serif",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className={`${playfairDisplay.variable} antialiased`}>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
