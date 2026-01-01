@@ -14,6 +14,9 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: "MPUMI STUDIO — Nails that feel like you.",
   description: "A futuristic approach to nail health and artistry. Custom designs reflecting your mood, style, and everyday energy.",
+  verification: {
+    google: "ULV7-BlxigOs1UuNEMhmBvLH4vMcB4Jyl8in6dSsdLU",
+  },
 };
 
 export default function RootLayout({
