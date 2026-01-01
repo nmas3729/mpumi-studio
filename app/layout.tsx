@@ -61,6 +61,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="canonical" href="https://mpumi.nmas.co.za" />
+        <link rel="preload" href="/mpumi.webp" as="image" type="image/webp" />
         <StructuredData />
       </head>
       <body className={`${playfairDisplay.variable} antialiased`}>

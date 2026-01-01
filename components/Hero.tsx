@@ -58,7 +58,7 @@ export default function Hero() {
           <div className={styles.imageWrapper}>
             <div className={styles.imageGlow}></div>
             <Image
-              src="/mpumi.png"
+              src="/mpumi.webp"
               alt="MPUMI Studio interior"
               width={600}
               height={800}
