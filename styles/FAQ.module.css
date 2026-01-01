@@ -11,13 +11,13 @@
 .label {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border: 1.5px solid var(--pink-primary);
+  border: 1.5px solid var(--charcoal);
   border-radius: 50px;
-  background: var(--pink-primary);
-  color: var(--white);
+  background: transparent;
+  color: var(--charcoal);
   font-family: var(--font-sans);
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 2rem;
