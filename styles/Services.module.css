@@ -13,7 +13,8 @@
   padding: 0.5rem 1rem;
   border: 1.5px solid var(--pink-primary);
   border-radius: 50px;
-  color: var(--pink-primary);
+  background: var(--pink-primary);
+  color: var(--white);
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;

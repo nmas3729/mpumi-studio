@@ -64,6 +64,9 @@ export default function Hero() {
               height={800}
               className={styles.image}
               priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 100vw, 600px"
+              quality={85}
             />
           </div>
         </div>
