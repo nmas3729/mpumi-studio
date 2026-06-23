@@ -18,11 +18,10 @@ export default function Header() {
         </Link>
         
         <nav className={styles.nav}>
-          <Link href="#about" className={styles.navLink}>About</Link>
-          <Link href="#services" className={styles.navLink}>Services</Link>
-          <Link href="#gallery" className={styles.navLink}>Our Work</Link>
-          <Link href="#artist" className={styles.navLink}>The Artist</Link>
-          <Link href="#policies" className={styles.navLink}>Policies</Link>
+          <Link href="/#services" className={styles.navLink}>Services</Link>
+          <Link href="/#gallery" className={styles.navLink}>Our Work</Link>
+          <Link href="/#artist" className={styles.navLink}>The Artist</Link>
+          <Link href="/policies" className={styles.navLink}>Policies</Link>
         </nav>
         
         <a 

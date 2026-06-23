@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Gallery from '../components/Gallery';
 import Artist from '../components/Artist';
-import Policies from '../components/Policies';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import FloatingButton from '../components/FloatingButton';
@@ -17,7 +16,6 @@ export default function Home() {
         <Services />
         <Gallery />
         <Artist />
-        <Policies />
         <FAQ />
       </main>
       <Footer />
